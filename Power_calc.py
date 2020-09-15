@@ -31,12 +31,22 @@ Power_motor_needed = Tourqe_person*rad 		#Torque needed
 
 Power_factor = Power_motor_chosen/Power_motor_needed 		#Torque factor
 
+
 print(" Power chosen =", Power_motor_chosen)
 print(" Power needed =", Power_motor_needed)
 print(" Factor =",Power_factor)
 
 
+#Calc 3
+
+ang_vel = Power_motor_chosen/Tourqe_person					#Rad per sec
+
+RPS = ang_vel/(2*pi)										#Revs per sec
+
+possible_gear_ratio = RPS/varv
 
 
+print(" RPM =",RPS)
 
+print(" Possible gear ratio =",possible_gear_ratio)
 
